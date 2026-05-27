@@ -1,0 +1,13 @@
+services:
+  label-studio:
+    image: heartexlabs/label-studio:latest
+    container_name: animal-tracks-label-studio
+    ports:
+      - "8080:8080"
+    environment:
+      LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED: "true"
+      LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT: "/label-studio/data"
+    volumes:
+      - ./label_studio/storage:/label-studio/data/label-studio
+      - ./data:/label-studio/data
+    command: label-studio --host 0.0.0.0 --port 8080

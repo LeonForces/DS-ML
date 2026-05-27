@@ -1,0 +1,9 @@
+{
+  "images": 120,
+  "bbox_count": 631,
+  "empty_images": 0,
+  "mean_bbox_per_image": 5.258,
+  "median_bbox_per_image": 5.0,
+  "mean_bbox_area": 0.006168,
+  "median_bbox_area": 0.006006
+}
